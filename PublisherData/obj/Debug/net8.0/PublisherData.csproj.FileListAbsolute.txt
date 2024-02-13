@@ -13,3 +13,4 @@ C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\refint\PublisherData.dll
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\PublisherData.pdb
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\ref\PublisherData.dll
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\PublisherData.sourcelink.json

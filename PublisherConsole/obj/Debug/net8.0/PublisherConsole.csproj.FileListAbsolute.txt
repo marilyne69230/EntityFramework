@@ -83,3 +83,4 @@ C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherConsole\bin\Debug\
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherConsole\obj\Debug\net8.0\PublisherConsole.csproj.CopyComplete
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherConsole\obj\Debug\net8.0\PublisherConsole.genruntimeconfig.cache
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherConsole\obj\Debug\net8.0\ref\PublisherConsole.dll
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherConsole\obj\Debug\net8.0\PublisherConsole.sourcelink.json

@@ -20,3 +20,4 @@ C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\n
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\refint\PublisherDomain.dll
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.pdb
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\ref\PublisherDomain.dll
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.sourcelink.json
