@@ -1,0 +1,22 @@
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\bin\Debug\net8.0\PublisherDomain.deps.json
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\bin\Debug\net8.0\PublisherDomain.dll
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\bin\Debug\net8.0\PublisherDomain.pdb
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\PublisherDomain.GeneratedMSBuildEditorConfig.editorconfig
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\PublisherDomain.AssemblyInfoInputs.cache
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\PublisherDomain.AssemblyInfo.cs
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\PublisherDomain.csproj.CoreCompileInputs.cache
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\PublisherDomain.dll
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\refint\PublisherDomain.dll
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\PublisherDomain.pdb
+M:\PluralsightEFCoreFundamentals_EF8\M02 Building Your FIrst App done\Before\PublisherDomain\obj\Debug\net8.0\ref\PublisherDomain.dll
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\bin\Debug\net8.0\PublisherDomain.deps.json
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\bin\Debug\net8.0\PublisherDomain.dll
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\bin\Debug\net8.0\PublisherDomain.pdb
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.AssemblyInfoInputs.cache
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.AssemblyInfo.cs
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.csproj.CoreCompileInputs.cache
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.dll
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\refint\PublisherDomain.dll
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\PublisherDomain.pdb
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherDomain\obj\Debug\net8.0\ref\PublisherDomain.dll
