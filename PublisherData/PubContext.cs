@@ -11,8 +11,7 @@ namespace PublisherData
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder
-                .UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PublisherDB;")
-                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+                .UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PublisherDB;");
         }
 
     }

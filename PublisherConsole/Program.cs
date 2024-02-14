@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PublisherData;
 using PublisherDomain;
+using System;
 using System.Runtime.CompilerServices;
 
 /*using (PubContext context = new PubContext())
@@ -38,7 +39,7 @@ void AddAuthorWithBooks()
 }
 
 // AJOUTER DES LIVRES A UN AUTEUR QUI EXISTE DEJA
-AddBookForExistingAuthor();
+//AddBookForExistingAuthor();
 void AddBookForExistingAuthor()
 {
     var book = new Book { Title = "Bonjour", BasePrice = 20.50m, PublishDate = new DateOnly(1988, 1, 1), AuthorId = 2 };
@@ -51,7 +52,7 @@ void AddBookForExistingAuthor()
 
 
 // AFFICHER NOM DES AUTEURS AVEC SES LIVRES
-GetAllAuthorsWithBooks();
+/*GetAllAuthorsWithBooks();*/
 void GetAllAuthorsWithBooks()
 {
     using var context = new PubContext();
@@ -60,9 +61,10 @@ void GetAllAuthorsWithBooks()
     foreach (var author in authorsWithBooks)
     {
         Console.WriteLine($"Auteur : {author.FirstName} {author.LastName}");
+        Console.WriteLine();
         foreach (var book in author.Books)
         {
-            Console.WriteLine($"  Livre : {book.Title}");
+            Console.WriteLine($" \t Livre :{book.Title}");
         }
     }
 }
@@ -79,6 +81,25 @@ void GetAuthors()
         Console.WriteLine($"AUTEUR {item.Id} : {item.LastName} {item.FirstName} ");
     }
 }
+
+// MODIFIER UN PRENOM D'UN AUTEUR 
+UpdateAuthorName("Caron", "Caronne");
+
+void UpdateAuthorName(string authorName, string newAuthorName)
+{
+    using var context = new PubContext();
+    var authorsToUpdate = context.Authors.Where(a => a.LastName == authorName).ToList();
+    foreach (var author in authorsToUpdate)
+    {
+        author.LastName = newAuthorName;
+    }
+    Console.WriteLine("Avant l'appel de la méthode DetectChange() : \n" + context.ChangeTracker.DebugView.ShortView);
+    context.ChangeTracker.DetectChanges();
+    Console.WriteLine("Après l'appel de la méthode DetectChange() : \n" + context.ChangeTracker.DebugView.ShortView);
+    context.SaveChanges();
+    Console.WriteLine("Après l'appel de la méthode SaveChanges() : \n" + context.ChangeTracker.DebugView.ShortView);
+}
+
 
 // FAIRE UNE PAGINATION SUR LA LISTE DES AUTEURS
 //GetAuthorsWithPagination(3);
