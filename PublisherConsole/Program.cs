@@ -82,10 +82,10 @@ void GetAuthors()
     }
 }
 
-// MODIFIER UN PRENOM D'UN AUTEUR 
-UpdateAuthorName("Caron", "Caronne");
+// MODIFIER UN PRENOM DE PLUSIEURS AUTEUR AVEC LE MEME NOM
+//UpdateAuthorNames("Caron", "Caronne");
 
-void UpdateAuthorName(string authorName, string newAuthorName)
+void UpdateAuthorNames(string authorName, string newAuthorName)
 {
     using var context = new PubContext();
     var authorsToUpdate = context.Authors.Where(a => a.LastName == authorName).ToList();
@@ -99,6 +99,77 @@ void UpdateAuthorName(string authorName, string newAuthorName)
     context.SaveChanges();
     Console.WriteLine("Après l'appel de la méthode SaveChanges() : \n" + context.ChangeTracker.DebugView.ShortView);
 }
+
+// MODIFIER UN PRENOM D'UN AUTEUR AVEC LE TRACKING
+//UpdateAuthorNameWithoutTracking("Caron", "Caronne");
+
+void UpdateAuthorNameWithoutTracking(string authorName, string newAuthorName)
+{
+    using var context = new PubContext();
+    var authorsToUpdate = context.Authors.Where(a => a.LastName == authorName).AsNoTracking().ToList();
+    foreach (var author in authorsToUpdate)
+    {
+        author.LastName = newAuthorName;
+        //context.Update(author);
+    }
+    Console.WriteLine("Avant l'appel de la méthode DetectChange() : \n" + context.ChangeTracker.DebugView.ShortView);
+    context.ChangeTracker.DetectChanges();
+    Console.WriteLine("Après l'appel de la méthode DetectChange() : \n" + context.ChangeTracker.DebugView.ShortView);
+    context.UpdateRange(authorsToUpdate);
+    Console.WriteLine("Après l'appel de la méthode SaveChanges() : \n" + context.ChangeTracker.DebugView.ShortView);
+}
+
+// MODIFIER LE NOM D'UN SEUL AUTEUR
+//UpdateAuthorName("Naili", "Rolando");
+
+void UpdateAuthorName(string authorName, string newAuthorName)
+{
+    using var context = new PubContext();
+    var authorToUpdate = context.Authors.FirstOrDefault(a => a.LastName == authorName);
+    if (authorToUpdate != null)
+    {
+        authorToUpdate.LastName = newAuthorName;
+        context.SaveChanges();
+        Console.WriteLine($"La modifcation a bien été effectué : {authorName} --> {newAuthorName}");
+    }
+    else
+    {
+        Console.WriteLine($"Aucun nom {authorName} n'a été trouvé");
+    }
+}
+
+// INSERTION ET MODIFICATION EN 1
+//VariousOperations();
+void VariousOperations()
+{
+    using var context = new PubContext();
+    var author = context.Authors.Find(2);
+    author.LastName = "Aylan";
+    var newAuthor = new Author { LastName = "Monoroe", FirstName = "Marilyne" };
+    context.Authors.Add(newAuthor);
+    context.SaveChanges();
+}
+
+// SUPPRIMER UN AUTEUR 
+DeleteAnAuthor(2);
+void DeleteAnAuthor(int authorId)
+{
+    using var context = new PubContext();
+
+    var author = context.Authors.Find(authorId);
+
+    if (author != null)
+    {
+        context.Authors.Remove(author);
+        context.SaveChanges();
+        Console.WriteLine("L'auteur a été supprimé");
+    }
+    else
+    {
+        Console.WriteLine("Aucun auteur avec cet ID n'a été trouvé !");
+    }
+}
+
 
 
 // FAIRE UNE PAGINATION SUR LA LISTE DES AUTEURS
