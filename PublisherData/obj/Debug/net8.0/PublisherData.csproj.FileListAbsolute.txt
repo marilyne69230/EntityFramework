@@ -14,3 +14,5 @@ C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\PublisherData.pdb
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\ref\PublisherData.dll
 C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\PublisherData.sourcelink.json
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\bin\Debug\net8.0\PublisherData.runtimeconfig.json
+C:\Users\ARMFR\Documents\Entity Framework\EFCoreDemo\PublisherData\obj\Debug\net8.0\PublisherData.genruntimeconfig.cache

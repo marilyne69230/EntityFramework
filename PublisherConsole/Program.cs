@@ -14,8 +14,8 @@ using System.Runtime.CompilerServices;
 AddAuthor("Magalie", "Sassi");
 AddAuthor("Merzak", "Naili");
 AddAuthor("Marilyne", "Naili");
-AddAuthor("Michele", "Charles");
-AddAuthor("Aylan", "Dupont");*/
+AddAuthor("Michele", "Charles");*/
+AddAuthor("Aylan", "Dupont");
 void AddAuthor(string firstName, string lastName)
 {
     var author = new Author { FirstName = firstName, LastName = lastName };
@@ -78,7 +78,7 @@ void GetAuthors()
 
     foreach (var item in authors)
     {
-        Console.WriteLine($"AUTEUR {item.Id} : {item.LastName} {item.FirstName} ");
+        Console.WriteLine($"AUTEUR {item.AuthorId} : {item.LastName} {item.FirstName} ");
     }
 }
 
@@ -187,7 +187,7 @@ void GetAuthorsWithPagination(int numberPerPage)
 
         foreach (var author in authors)
         {
-            Console.WriteLine($"Auteur {author.Id} : {author.FirstName} {author.LastName}");
+            Console.WriteLine($"Auteur {author.AuthorId} : {author.FirstName} {author.LastName}");
         }
     }
 }
